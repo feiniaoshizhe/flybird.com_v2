@@ -62,8 +62,8 @@ const data = {
       icon: IconChartBar,
     },
     {
-      title: "Gallery",
-      url: "/gallery",
+      title: "Solutions",
+      url: "/solutions",
       icon: IconPhotoHeart,
     },
     {
@@ -120,7 +120,7 @@ const data = {
       ],
     },
   ],
-  documents: [
+  online: [
     {
       name: "Data Library",
       url: "#",
@@ -148,7 +148,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarContent>
         <NavMain items={data.navMain} />
         <SidebarSeparator className=" my-4" />
-        <NavOnline items={data.documents} />
+        <NavOnline items={data.online} />
       </SidebarContent>
     </Sidebar>
   );
