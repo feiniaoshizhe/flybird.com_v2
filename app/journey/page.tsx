@@ -7,6 +7,8 @@ import { Heading } from "@/components/ui/heading";
 import { Suspense } from "react";
 import ScreenLoadingSpinner from "@/components/screen-loading-spinner";
 import { Separator } from "@/components/ui/separator";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { JourneyCard } from "@/components/journey-card";
 // import { JourneyCard } from "@/components/journey-card";
 
 type Journey = {
@@ -27,7 +29,8 @@ const timelineData: TimelineEntry[] = [
       {
         date: "string",
         title: "string",
-        content: "string",
+        content:
+          "Built a Mini-ITX PC I built a Mini ITX PC with Teenage Engineering Computer-1 and Apple Studio Display. You can read the story here.",
       },
     ],
   },
@@ -47,7 +50,8 @@ const timelineData: TimelineEntry[] = [
       {
         date: "string",
         title: "string",
-        content: "string",
+        content:
+          "The term 'Artificial Intelligence' was coined at the Dartmouth Conference, marking the official beginning of AI as a field. John McCarthy, Marvin Minsky, Nathaniel Rochester, and Claude Shannon organized this seminal event, setting the stage for decades of research and development.",
       },
     ],
   },
@@ -90,7 +94,7 @@ export default function Page() {
                 key={`data_${itemIndex}`}
                 className="flex flex-col items-baseline gap-6 md:flex-row md:gap-12"
               >
-                <h2>{item.year}</h2>
+                <h2 className=" font-bold">{item.year}</h2>
                 <section>
                   {item.logs.map((log, logIndex) => (
                     <div
@@ -107,7 +111,7 @@ export default function Page() {
                         <div className="size-2 rounded-full bg-blue-600" />
                       </div>
                       <div className="grow pl-4 lg:pl-8">
-                        {/* <JourneyCard {...log} index={logIndex} /> */}
+                        <JourneyCard {...log} index={logIndex} />
                       </div>
                     </div>
                   ))}

@@ -17,25 +17,24 @@ interface ImageProps {
 
 interface JourneyCardProps {
   title: string;
-  description?: string;
+  content?: string;
   image?: ImageProps;
   index: number;
 }
 
 export const JourneyCard = memo(
-  ({ title, description, image, index }: JourneyCardProps) => {
+  ({ title, content, image, index }: JourneyCardProps) => {
     return (
       <div className="word-break-word flex flex-col">
         <span className="mb-px font-semibold tracking-tight">{title}</span>
-
-        {description && (
+        {content && (
           <MarkdownRenderer
             className="text-sm"
             options={{
               forceInline: true,
             }}
           >
-            {description}
+            {content}
           </MarkdownRenderer>
         )}
 
