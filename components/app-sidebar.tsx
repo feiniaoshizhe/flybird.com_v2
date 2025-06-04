@@ -5,23 +5,14 @@ import {
   IconBookmark,
   IconCamera,
   IconChartBar,
-  IconDashboard,
   IconDatabase,
   IconFileAi,
   IconFileDescription,
   IconFileWord,
-  IconFolder,
-  IconHelp,
-  IconInnerShadowTop,
-  IconListDetails,
   IconLocation,
-  IconPhotoHeart,
+  IconPresentationAnalytics,
   IconReport,
-  IconSearch,
-  IconSettings,
   IconSpaces,
-  IconSparkles,
-  IconUsers,
 } from "@tabler/icons-react";
 
 import { NavOnline } from "@/components/nav-online";
@@ -37,8 +28,7 @@ import {
   SidebarMenuItem,
   SidebarSeparator,
 } from "@/components/ui/sidebar";
-import { Separator } from "@radix-ui/react-separator";
-
+import { Separator } from "@/components/ui/separator";
 const data = {
   user: {
     name: "Xu Edward",
@@ -64,7 +54,7 @@ const data = {
     {
       title: "Solutions",
       url: "/solutions",
-      icon: IconPhotoHeart,
+      icon: IconPresentationAnalytics,
     },
     {
       title: "Bookmark",
@@ -147,7 +137,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />
-        <SidebarSeparator className=" my-4" />
+        <Separator className=" my-4" />
         <NavOnline items={data.online} />
       </SidebarContent>
     </Sidebar>

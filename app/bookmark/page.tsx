@@ -1,5 +1,7 @@
 "use client";
 
+import PageContainer from "@/components/layout/page-container";
+
 export default function Page() {
-  return <div>bookmark</div>;
+  return <PageContainer>bookmark</PageContainer>;
 }

@@ -1,5 +1,7 @@
 "use client";
 
+import PageContainer from "@/components/layout/page-container";
+
 export default function Page() {
-  return <div>solutions</div>;
+  return <PageContainer>solutions</PageContainer>;
 }
