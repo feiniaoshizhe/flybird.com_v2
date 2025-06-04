@@ -3,7 +3,14 @@ import Markdown from "markdown-to-jsx";
 import { Link } from "@/components/link";
 // import { TweetCard } from "@/components/tweet-card/tweet-card";
 
-export const MarkdownRenderer = ({ children, options, ...props }) => {
+export const MarkdownRenderer = ({
+  children,
+  options,
+  ...props
+}: {
+  children: string;
+  options?: any;
+}) => {
   return (
     <Markdown
       children={children}
