@@ -38,8 +38,8 @@ const timelineData: TimelineEntry[] = [
     year: 2023,
     logs: [
       {
-        date: "string",
-        title: "string",
+        date: "2023-09",
+        title: "入职 达观数据",
         content: "string",
       },
     ],
@@ -48,8 +48,8 @@ const timelineData: TimelineEntry[] = [
     year: 2021,
     logs: [
       {
-        date: "string",
-        title: "string",
+        date: "2021-11",
+        title: "入职 上海光",
         content:
           "The term 'Artificial Intelligence' was coined at the Dartmouth Conference, marking the official beginning of AI as a field. John McCarthy, Marvin Minsky, Nathaniel Rochester, and Claude Shannon organized this seminal event, setting the stage for decades of research and development.",
       },
@@ -110,6 +110,7 @@ export default function Page() {
                       <div className="z-0 grid size-5 shrink-0 place-items-center rounded-full border bg-white text-white shadow-xs">
                         <div className="size-2 rounded-full bg-blue-600" />
                       </div>
+
                       <div className="grow pl-4 lg:pl-8">
                         <JourneyCard {...log} index={logIndex} />
                       </div>

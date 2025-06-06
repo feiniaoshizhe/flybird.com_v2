@@ -27,16 +27,7 @@ export const JourneyCard = memo(
     return (
       <div className="word-break-word flex flex-col">
         <span className="mb-px font-semibold tracking-tight">{title}</span>
-        {content && (
-          <MarkdownRenderer
-            className="text-sm"
-            options={{
-              forceInline: true,
-            }}
-          >
-            {content}
-          </MarkdownRenderer>
-        )}
+        {content && <MarkdownRenderer content={content} />}
 
         {image?.url && (
           <div className="mt-2.5 overflow-hidden rounded-xl bg-white">
