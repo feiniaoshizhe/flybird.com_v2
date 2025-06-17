@@ -27,10 +27,9 @@ const timelineData: TimelineEntry[] = [
     year: 2025,
     logs: [
       {
-        date: "string",
-        title: "string",
-        content:
-          "Built a Mini-ITX PC I built a Mini ITX PC with Teenage Engineering Computer-1 and Apple Studio Display. You can read the story here.",
+        date: "至今",
+        title: "至今",
+        content: "",
       },
     ],
   },
@@ -39,7 +38,7 @@ const timelineData: TimelineEntry[] = [
     logs: [
       {
         date: "2023-09",
-        title: "入职 达观数据",
+        title: "加入 达观数据",
         content: "string",
       },
     ],
@@ -49,9 +48,8 @@ const timelineData: TimelineEntry[] = [
     logs: [
       {
         date: "2021-11",
-        title: "入职 上海光",
-        content:
-          "The term 'Artificial Intelligence' was coined at the Dartmouth Conference, marking the official beginning of AI as a field. John McCarthy, Marvin Minsky, Nathaniel Rochester, and Claude Shannon organized this seminal event, setting the stage for decades of research and development.",
+        title: "加入 上海光潾网络科技有限公司",
+        content: "",
       },
     ],
   },
@@ -59,13 +57,23 @@ const timelineData: TimelineEntry[] = [
     year: 2019,
     logs: [
       {
-        date: "string",
-        title: "string",
+        date: "2019-07",
+        title: "加入 上海联众网络科技有限公司",
         content: "string",
       },
       {
-        date: "string",
-        title: "string",
+        date: "2019-07",
+        title: "毕业",
+        content: "string",
+      },
+    ],
+  },
+  {
+    year: 2015,
+    logs: [
+      {
+        date: "2015-07",
+        title: "就读 上海应用技术大学",
         content: "string",
       },
     ],
