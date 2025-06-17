@@ -13,10 +13,7 @@ jobs:
         with:
           submodules: true # Fetch Hugo themes (true OR recursive) 获取submodule主题
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
-
-      - name: Setup nextjs # 步骤名自取
-        uses: actions/upload-artifact@v4 # hugo官方提供的action，用于在任务环境中获取hugo
-
+          
       - name: Install dependencies
         run:
           npm install
